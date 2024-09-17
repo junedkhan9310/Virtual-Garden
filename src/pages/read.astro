@@ -1,0 +1,32 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+  <div class="flex items-center justify-center h-screen bg-blue-50">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold text-blue-700 mb-6">Project Overview</h1>
+      <p class="text-lg text-gray-700 max-w-4xl mx-auto mb-6">
+        Hello! We've built a simple website using Astro and Tailwind CSS. Because of the busy festival season in September, we had to create a basic prototype quickly.
+      </p>
+      <p class="text-lg text-gray-700 max-w-4xl mx-auto mb-6">
+        We haven't yet added features like login and admin panels, but those would be easy to include. The current search function is basic, but we plan to improve it with filters using this model: <a href="https://github.com/DaniDiazTech/Astro-search-component" class="text-blue-500 underline">Astro Search Component</a>.
+      </p>
+      <p class="text-lg text-gray-700 max-w-4xl mx-auto mb-6">
+        Even though the website looks simple, we've tackled the most challenging parts, like adding views and info spots. What's left is to work with more data and complete the site. We also prepared 3D model views but couldn't include them at deployment. For more details, please check out our team leader’s <a href="https://github.com/junedkhan9310/Virtual-Garden" class="text-blue-500 underline">GitHub</a>.
+      </p>
+      <p class="text-lg text-gray-700 max-w-4xl mx-auto">
+        Thank you for reviewing our project!
+      </p>
+    </div>
+  </div>
+
+  <style>
+    body {
+      background-image: url('/assets/images/blue-background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+</MainLayout>
